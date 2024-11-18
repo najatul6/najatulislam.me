@@ -55,7 +55,7 @@ const IntroSecond = () => {
 
           <p className="lg:w-[70%] xs:w-full text-white text-sm mt-4 xl:text-xl">
             Experienced full-stack developer with 2+ years of expertise in
-            JavaScript, ReactJS, NestJS, and Graphic Design experience.
+            JavaScript, ReactJS, NextJS, and Graphic Design experience.
           </p>
 
           <div className="flex flex-col justify-start items-start gap-5 mt-6">
