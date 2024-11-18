@@ -8,7 +8,7 @@ import MyWork from "../MyWork/MyWork";
 
 const Home = () => {
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen">
       <Helmet>
         <title>Najatul Islam - Official Website</title>
         <meta
