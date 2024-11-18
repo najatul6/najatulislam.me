@@ -1,5 +1,5 @@
 // import Intro from "../../Components/Intro/Intro"
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import IntroSecond from "../../Components/Intro/IntroSecond";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
