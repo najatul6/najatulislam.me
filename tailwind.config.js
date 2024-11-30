@@ -20,7 +20,7 @@ export default {
       },
       backgroundImage: {
         // "custom-gradient": "linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% )",
-        "custom-gradient": "linear-gradient(-45deg, #CFF80B 0%, #A2E4C0 100% )",
+        "custom-gradient": "linear-gradient(-45deg, #CFF80B 0%, #0A9396 100% )",
         "custom2-gradient": "linear-gradient(to right, #e05bf4 , #00dbde )",
         "najatul-11": "url('src/assets/najatul11.jpg')",
       },
