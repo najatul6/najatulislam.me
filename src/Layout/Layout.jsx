@@ -5,7 +5,7 @@ import Navbar from "../Components/Navbar/Navbar";
 const Layout = () => {
   return (
     <div className="max-w-[1920px] mx-auto">
-      <div className="sticky top-0 z-10 w-full  shadow-up lg:shadow-none bg-light-black">
+      <div className="sticky top-0 z-10 w-full shadow-up bg-light-black">
         <Navbar />
       </div>
 
