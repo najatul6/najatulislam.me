@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const EducationCard = ({ item }) => {
   const { degree, institution, startYear, endYear, description } = item;
   return (
-    <div className="p-2">
+    <div className="px-3 py-5 shadow-in">
       <div className="flex text-center">
         <h2 className="shadow-up rounded-full py-2 px-3 font-bold font-Cormorant">
           {startYear} - {endYear}
