@@ -62,7 +62,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className="">
+    <div className="mt-5">
       <Toaster />
       <Header text1="Get in" text2="Touch" />
       <div className="px-5 py-10 lg:px-10 lg:py-16 rounded-xl shadow-up">

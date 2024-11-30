@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="flex justify-between gap-5 items-center px-5 py-5 w-full">
       <a
         href="/"
-        className="md:text-3xl rounded-xl font-extrabold  text-light-grey cursor-pointer  transition-all text-wrap"
+        className="md:text-3xl rounded-xl font-extrabold text-light-grey cursor-pointer  transition-all text-wrap"
       >
         {/* <img src={logo} alt="logo" width={220} /> */}
         Code.<span className="text-blue-light">Create.</span>Elevate.
