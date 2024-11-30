@@ -19,7 +19,7 @@ const Footer = () => {
         <motion.a
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.3 }}
         href="/"
         className="md:text-3xl rounded-xl font-extrabold  text-light-grey cursor-pointer  transition-all mb-8 text-wrap"
       >Code.<span className="text-blue-light">Create.</span>Elevate.</motion.a>
@@ -31,7 +31,7 @@ const Footer = () => {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.2, delay: index * 0.2 }}
+              transition={{ duration: 0.1, delay: index * 0.1 }}
               key={href}
             >
               <SocialButton icon={<Icon />} text={name} link={href} />
