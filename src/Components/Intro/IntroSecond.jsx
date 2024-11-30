@@ -18,7 +18,7 @@ const IntroSecond = () => {
   };
   return (
     <div className="relative">
-      <div className="lg:absolute top-0 bottom-0 lg:left-[40%] flex justify-center items-center">
+      <div className="lg:absolute top-0 bottom-0 lg:left-[40%] flex justify-center items-center shadow-in overflow-hidden rounded-full">
         <img
           data-aos="zoom-in"
           data-aos-delay="50"
