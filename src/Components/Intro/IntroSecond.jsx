@@ -32,7 +32,7 @@ const IntroSecond = () => {
       <div className="h-full px-4 py-5 lg:py-0 flex items-center ">
         <div
           data-aos="fade-right"
-          data-aos-delay="50"
+          data-aos-delay="20"
           data-aos-duration="1000"
           className="w-full flex flex-col gap-2"
         >
