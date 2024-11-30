@@ -82,7 +82,7 @@ const Contact = () => {
                 value={formData.name}
                 placeholder="Enter Your Name"
                 onChange={handleChange}
-                className="w-full bg-transparent p-4 rounded-xl shadow-in focus:outline-none focus:shadow-up focus:bg-transparent"
+                className="w-full bg-transparent p-4 placeholder:text-blue-light rounded-xl shadow-in focus:outline-none focus:shadow-up focus:bg-transparent"
               />
               {errors.name && (
                 <motion.p
@@ -123,7 +123,7 @@ const Contact = () => {
               rows={6}
               placeholder="Enter Your Message"
               onChange={handleChange}
-              className="w-full p-4 rounded-xl h-32 bg-transparent shadow-in focus:outline-none focus:shadow-up"
+              className="w-full p-4 rounded-xl h-32 placeholder:text-blue-light bg-transparent shadow-in focus:outline-none focus:shadow-up"
             />
             {errors.message && (
               <motion.p
