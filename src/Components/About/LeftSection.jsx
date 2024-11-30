@@ -130,7 +130,7 @@ const LeftSection = () => {
             Download <span className="text-blue-light">CV</span>
           </p>
           <p className="download-icon">
-            <FaDownload className="animate-bounce" />
+            <FaDownload className="animate-bounce text-blue-light" />
           </p>
         </button>
       </motion.div>

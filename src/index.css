@@ -837,7 +837,7 @@ body {
 .button-bg{
   position: absolute;
   inset: 0;
-  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  background: linear-gradient(-45deg, #0A9396 0%, #CFF80B 100% );
   transform: translateX(100%);
   transition: transform .5s ease-in-out;
   border-radius: 12px;
@@ -865,7 +865,7 @@ body {
   right: 0;
   border-radius: 12px;
   transition: color 5s ease-in-out;
-  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  /* background: linear-gradient(-45deg, #CFF80B 0%, #0A9396 100% ); */
 }
 
 
