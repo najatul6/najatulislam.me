@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <div className="">
-      <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="500">
+      <div data-aos="fade-up" data-aos-delay="20" data-aos-duration="500">
         <Header text1={"About"} text2={"Me"} />
       </div>
       <div className="flex flex-col lg:flex-row justify-between gap-5  w-full ">
@@ -31,7 +31,7 @@ const About = () => {
           <motion.h2
             initial={{ scale: 0, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.3 }}
             className="text-xl md:text-3xl font-bold uppercase font-Cormorant w-full text-center  rounded-xl"
           >
             <span className="text-blue-light">Experience </span> &
