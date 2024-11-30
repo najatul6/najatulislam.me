@@ -28,7 +28,7 @@ const ExperienceEducation = () => {
                 type: "spring",
                 stiffness: 260,
                 damping: 20,
-                delay: idx * 0.2,
+                delay: idx * 0.1,
               }}
             >
               <EducationCard item={item} />
