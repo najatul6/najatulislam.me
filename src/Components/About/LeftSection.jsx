@@ -124,7 +124,7 @@ const LeftSection = () => {
         transition={{ duration: 1 }}
         className="flex justify-center items-center w-full mt-10"
       >
-        <button className="download-btn shadow-up rounded-xl">
+        <button className="download-btn shadow-in rounded-xl">
           <span className="button-bg"></span>
           <p className="download-text">
             Download <span className="text-blue-light">CV</span>
