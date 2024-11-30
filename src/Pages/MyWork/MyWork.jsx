@@ -9,11 +9,11 @@ const MyWork = () => {
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.5 }}
       >
         <Header text1={"My"} text2={"Projects"} />
       </motion.div>
-      <section className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+      <section className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 shadow-in">
         {projectItem?.map((item, idx) => (
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -22,8 +22,8 @@ const MyWork = () => {
               type: "spring",
               stiffness: 260,
               damping: 20,
-              delay: idx * 0.2,
-              duration: 0.5,
+              delay: idx * 0.1,
+              duration: 0.3,
             }}
             key={item?.id}
           >
