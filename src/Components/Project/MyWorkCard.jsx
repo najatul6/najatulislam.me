@@ -16,7 +16,7 @@ const MyWorkCard = ({item}) => {
               alt={item?.name}
               className=" w-full object-cover transition-transform duration-300 group-hover:scale-110"
             />
-            <div className="absolute w-full bottom-0 flex bg-high-black flex-col justify-center items-center px-3 py-5  transition-opacity duration-500  ">
+            <div className="absolute w-full bottom-0 flex bg-high-black flex-col justify-center items-center px-3 py-5  transition-opacity duration-500  shadow-in">
               
               <div className="flex gap-6 justify-start items-center ">
                 <Button
