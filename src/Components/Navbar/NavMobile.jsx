@@ -1,34 +1,66 @@
 import Hamburger from "hamburger-react";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { routes } from "../../Utils/utils";
 import { AnimatePresence, motion } from "framer-motion";
 
 const NavMobile = () => {
   const [isOpen, setOpen] = useState(false);
+  const [activeRoute, setActiveRoute] = useState("/"); // Track active route
   const ref = useRef(null);
+
+  // Handle scrolling to the section and closing menu
   const handleLinkClick = (e, href) => {
     e.preventDefault();
+    setOpen(false); // Close menu after click
+
     if (href === "/") {
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
       const targetElement = document.querySelector(href);
       if (targetElement) {
-        const offset = -80;
+        const offset = -80; // Adjust for navbar height
         const elementPosition = targetElement.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.scrollY + offset;
         window.scrollTo({ top: offsetPosition, behavior: "smooth" });
       }
     }
+
+    setActiveRoute(href); // Update active route
   };
-  const handleClick = (e, href) => {
-    setOpen((prev) => !prev);
-    handleLinkClick(e, href);
+
+  // Update active route based on scroll position
+  const updateActiveRouteOnScroll = () => {
+    let active = "/";
+    const scrollPosition = window.scrollY + 100; // Offset to trigger active link
+
+    routes.forEach((route) => {
+      if (route.href !== "/") {
+        const section = document.querySelector(route.href);
+        if (section) {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            active = route.href;
+          }
+        }
+      }
+    });
+
+    setActiveRoute(active);
   };
+
+  useEffect(() => {
+    // Add scroll event listener
+    window.addEventListener("scroll", updateActiveRouteOnScroll);
+    updateActiveRouteOnScroll(); // Initial update
+
+    return () => {
+      window.removeEventListener("scroll", updateActiveRouteOnScroll);
+    };
+  }, []);
+
   return (
-    <div
-      ref={ref}
-      className="z-10 bg-light-black shadow-up hover:shadow-in rounded-xl lg:hidden"
-    >
+    <div ref={ref} className="z-10 bg-light-black shadow-up hover:shadow-in rounded-xl lg:hidden">
       <div className={`${isOpen && "text-blue-light"}`}>
         <Hamburger toggled={isOpen} size={20} toggle={setOpen} />
       </div>
@@ -56,13 +88,15 @@ const NavMobile = () => {
                       delay: 0.1 + idx / 10,
                     }}
                     key={route.title}
-                    className="w-full p-[0.08rem] rounded-xl shadow-up hover:shadow-in text-light-grey hover:text-blue-light"
+                    className={`w-full p-[0.08rem] rounded-xl shadow-in hover:shadow-up ${
+                      activeRoute === route.href
+                        ? "text-blue-light font-bold shadow-up" // Highlight active link
+                        : "text-light-grey"
+                    }`}
                   >
                     <a
-                      onClick={(e) => handleClick(e, route?.href)}
-                      className={
-                        "flex items-center justify-between w-full p-5 rounded-xl active:text-blue-light active:font-bold hover:font-bold"
-                      }
+                      onClick={(e) => handleLinkClick(e, route?.href)}
+                      className="flex items-center justify-between w-full p-5 rounded-xl hover:font-bold"
                       href={route.href}
                     >
                       <span className="flex gap-1 text-lg">{route.title}</span>
