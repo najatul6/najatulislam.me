@@ -123,7 +123,7 @@ const Contact = () => {
               rows={6}
               placeholder="Enter Your Message"
               onChange={handleChange}
-              className="w-full p-4 rounded-xl h-32 bg-transparent shadow-up focus:outline-none focus:shadow-in"
+              className="w-full p-4 rounded-xl h-32 bg-transparent shadow-in focus:outline-none focus:shadow-up"
             />
             {errors.message && (
               <motion.p
@@ -138,7 +138,7 @@ const Contact = () => {
 
           <button
             type="submit"
-            className={`text-xs md:text-lg lg:text-2xl font-medium px-5 py-3 shadow-up rounded-xl hover:shadow-in hover:text-blue-light duration-500 ${
+            className={`text-xs md:text-lg lg:text-2xl font-medium px-5 py-3 shadow-in rounded-xl hover:shadow-up hover:text-blue-light duration-500 ${
               isSending ? "cursor-not-allowed opacity-50" : ""
             }`}
             disabled={isSending}
