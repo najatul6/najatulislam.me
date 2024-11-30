@@ -13,10 +13,10 @@ const About = () => {
       </div>
       <div className="flex flex-col lg:flex-row justify-between gap-5  w-full ">
         {/* About Me Content */}
-        <div className="shadow-up p-5 rounded-xl w-full lg:w-3/4 ">
+        <div className="shadow-in p-5 rounded-xl w-full lg:w-3/4 ">
           <LeftSection />
         </div>
-        <div className="shadow-up p-5 rounded-xl w-full lg:w-2/4 flex justify-center">
+        <div className="shadow-in p-5 rounded-xl w-full lg:w-2/4 flex justify-center">
           <RightSection />
         </div>
       </div>
