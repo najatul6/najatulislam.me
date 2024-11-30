@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const ExperienceEducation = () => {
   return (
     <div className="">
-      <div className="shadow-up py-5 rounded-xl px-2 md:px-2">
+      <div className="shadow-in py-5 rounded-xl px-2 md:px-2">
         <div className="flex flex-col justify-center items-center py-3">
           <motion.h2
             initial={{ opacity: 0, y: -20 }}
@@ -37,7 +37,7 @@ const ExperienceEducation = () => {
         </div>
       </div>
 
-      <div className="shadow-up py-5 rounded-xl mt-10 px-2 md:px-2">
+      <div className="shadow-in py-5 rounded-xl mt-10 px-2 md:px-2">
         <div className="flex flex-col justify-center items-center py-3">
           <h2 className="text-base md:text-lg font-semibold font-Cormorant py-2 rounded-tr-full rounded-bl-full  text-center shadow-up px-10 md:px-20">
             Experience

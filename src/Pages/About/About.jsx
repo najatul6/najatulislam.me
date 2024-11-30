@@ -26,7 +26,7 @@ const About = () => {
       </div>
 
       {/* EXPERIENCE & EDUCATION */}
-      <div className="mt-10 shadow-up p-5 rounded-xl">
+      <div className="mt-10 shadow-in p-5 rounded-xl">
         <div className="flex justify-center items-center shadow-up rounded-xl py-5 my-5">
           <motion.h2
             initial={{ scale: 0, opacity: 0 }}
