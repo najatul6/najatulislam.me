@@ -65,7 +65,7 @@ const Contact = () => {
     <div className="mt-5">
       <Toaster />
       <Header text1="Get in" text2="Touch" />
-      <div className="px-5 py-10 lg:px-10 lg:py-16 rounded-xl shadow-up">
+      <div className="px-5 py-10 lg:px-10 lg:py-16 rounded-xl shadow-in">
         <motion.form
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -82,7 +82,7 @@ const Contact = () => {
                 value={formData.name}
                 placeholder="Enter Your Name"
                 onChange={handleChange}
-                className="w-full bg-transparent p-4 rounded-xl shadow-up focus:outline-none focus:shadow-in focus:bg-transparent"
+                className="w-full bg-transparent p-4 rounded-xl shadow-in focus:outline-none focus:shadow-up focus:bg-transparent"
               />
               {errors.name && (
                 <motion.p
@@ -102,7 +102,7 @@ const Contact = () => {
                 value={formData.email}
                 placeholder="Enter Your Email Address"
                 onChange={handleChange}
-                className="w-full bg-transparent appearance-none p-4 rounded-xl shadow-up focus:outline-none focus:bg-transparent focus:shadow-in "
+                className="w-full bg-transparent appearance-none p-4 rounded-xl shadow-in focus:outline-none focus:bg-transparent focus:shadow-up "
               />
               {errors.email && (
                 <motion.p
