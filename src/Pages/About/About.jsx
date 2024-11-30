@@ -21,7 +21,7 @@ const About = () => {
         </div>
       </div>
       {/* Skills Content */}
-      <div className="mt-10 shadow-up p-5 rounded-xl">
+      <div className="mt-10 shadow-in p-5 rounded-xl">
         <MySkills />
       </div>
 

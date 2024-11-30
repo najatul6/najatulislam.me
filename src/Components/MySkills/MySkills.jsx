@@ -10,7 +10,7 @@ const MySkills = () => {
       <div className="mt-5 w-full flex flex-col gap-4">
         <div className="flex flex-col gap-2">
           <h2 className="text-xl uppercase font-bold ml-2">Html</h2>
-          <div className="w-full h-[1.8rem] rounded-xl shadow-up">
+          <div className="w-full h-[1.8rem] rounded-xl shadow-in">
             <motion.div
             initial={{width:0,opacity:0}}
             whileInView={{width:'89%',opacity:1}}
