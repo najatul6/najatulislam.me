@@ -6,32 +6,22 @@ import { motion } from "framer-motion";
 
 const MyWorkCard = ({item}) => {
   return (
-    <div className="shadow-up p-2 md:p-3 rounded-xl">
+    <div className="shadow-in p-2 md:p-3 rounded-xl">
            <motion.div
            whileHover={{scale:1}}
-            className="group relative overflow-hidden rounded-xl shadow-up"
+            className="group relative overflow-hidden rounded-xl shadow-in"
           >
             <img
               src={item?.image}
               alt={item?.name}
-              className="h-[550px] lg:h-[500px] w-full object-cover transition-transform duration-500 group-hover:scale-110"
+              className="h-[400px] lg:h-[300px] w-full object-cover transition-transform duration-300 group-hover:scale-110"
             />
-            <div className="absolute inset-0 flex flex-col justify-center items-center px-3 py-5 opacity-0 backdrop-blur-3xl transition-opacity duration-500 group-hover:opacity-100 bg-[#00113b] bg-opacity-80">
+            <div className="absolute inset-0 flex flex-col justify-center items-center px-3 py-5 backdrop-blur-3xl transition-opacity duration-500  bg-opacity-80">
               <h3 className="uppercase mb-2 text-xl font-bold text-white">
                 {item?.name}
               </h3>
               <hr  className="w-full py-1"/>
               <h4 className="mb-2 text-center">{item?.description}</h4>
-              <div className="lg:mb-12">
-                <h3 className="text-lg font-semibold text-white underline">
-                  Features :
-                </h3>
-                {item?.features?.map((listItem, index) => (
-                    <ul key={index} className="pl-5 list-square">
-                        <li>{listItem}</li>
-                    </ul>
-                ))}
-              </div>
               <div className="flex gap-6 justify-start items-center ">
                 <Button
                   text="Git Hub"
@@ -55,3 +45,53 @@ MyWorkCard.propTypes = {
 }
 
 export default MyWorkCard
+
+
+
+
+
+
+
+
+
+{/* <div className="shadow-in p-2 md:p-3 rounded-xl">
+           <motion.div
+           whileHover={{scale:1}}
+            className="group relative overflow-hidden rounded-xl shadow-in"
+          >
+            <img
+              src={item?.image}
+              alt={item?.name}
+              className="h-[400px] lg:h-[300px] w-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 flex flex-col justify-center items-center px-3 py-5 opacity-0 backdrop-blur-3xl transition-opacity duration-500 group-hover:opacity-100 bg-[#00113b] bg-opacity-80">
+              <h3 className="uppercase mb-2 text-xl font-bold text-white">
+                {item?.name}
+              </h3>
+              <hr  className="w-full py-1"/>
+              <h4 className="mb-2 text-center">{item?.description}</h4>
+              {/* <div className="lg:mb-12">
+                <h3 className="text-lg font-semibold text-white underline">
+                  Features :
+                </h3>
+                {item?.features?.map((listItem, index) => (
+                    <ul key={index} className="pl-5 list-square">
+                        <li>{listItem}</li>
+                    </ul>
+                ))}
+              </div> */}
+        //       <div className="flex gap-6 justify-start items-center ">
+        //         <Button
+        //           text="Git Hub"
+        //           link={`${item?.github_link}`}
+        //           icon={<IoGitBranch />}
+        //         />
+        //         <Button
+        //           text="Live Link"
+        //           link={`${item?.liveLink}`}
+        //           icon={<VscLiveShare />}
+        //         />
+        //       </div>
+        //     </div>
+        //   </motion.div>
+        //  </div> */}
