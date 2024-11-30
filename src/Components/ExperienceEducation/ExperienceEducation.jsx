@@ -18,7 +18,7 @@ const ExperienceEducation = () => {
             Education
           </motion.h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10 md:px-5 place-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10 md:px-5 ">
           {education?.map((item, idx) => (
             <motion.div
               key={item?.id}
