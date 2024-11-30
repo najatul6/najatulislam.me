@@ -9,19 +9,15 @@ const MyWorkCard = ({item}) => {
     <div className="shadow-in p-2 md:p-3 rounded-xl">
            <motion.div
            whileHover={{scale:1}}
-            className="group relative overflow-hidden rounded-xl shadow-in"
+            className="group relative overflow-hidden rounded-xl shadow-in h-[300px]"
           >
             <img
               src={item?.image}
               alt={item?.name}
-              className="h-[400px] lg:h-[300px] w-full object-cover transition-transform duration-300 group-hover:scale-110"
+              className=" w-full object-cover transition-transform duration-300 group-hover:scale-110"
             />
-            <div className="absolute inset-0 flex flex-col justify-center items-center px-3 py-5 backdrop-blur-3xl transition-opacity duration-500  bg-opacity-80">
-              <h3 className="uppercase mb-2 text-xl font-bold text-white">
-                {item?.name}
-              </h3>
-              <hr  className="w-full py-1"/>
-              <h4 className="mb-2 text-center">{item?.description}</h4>
+            <div className="absolute w-full bottom-0 flex bg-high-black flex-col justify-center items-center px-3 py-5  transition-opacity duration-500  ">
+              
               <div className="flex gap-6 justify-start items-center ">
                 <Button
                   text="Git Hub"
