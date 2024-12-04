@@ -37,17 +37,17 @@ const IntroSecond = () => {
           data-aos-duration="1000"
           className="w-full flex flex-col gap-2"
         >
-          <h4 className="text-lg lg:text-2xl font-semibold text-white">
-            Hey There,
+          <h4 className="text-lg lg:text-xl font-semibold text-white">
+            Hey There ,
           </h4>
-          <h1 className="text-4xl md:text-6xl font-semibold font-Montserrat mt-2">
+          <h1 className="text-xl md:text-4xl font-semibold font-Montserrat mt-2">
             I&apos;m{" "}
             <span className=" font-Cormorant font-extrabold text-white">
               {" "}
               Najatul{" "}
             </span>
           </h1>
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white font-Cormorant">
+          <h1 className="text-3xl md:text-4xl font-extrabold text-white font-Cormorant">
             Islam
           </h1>
           <h4 className="text-blue-light mt-4 lg:text-2xl font-bold font-Cormorant">
@@ -92,23 +92,23 @@ const IntroSecond = () => {
         >
           <div className="flex flex-col sm:items-end xs:items-center">
             <div className="inline-flex gap-1 items-center">
-              <h2 className="xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-semibold">
+              <h2 className="text-xl md:text-2xl lg:text-4xl font-semibold">
                 2
               </h2>
-              <h2 className="text-blue-light xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-extrabold">
+              <h2 className="text-blue-light text-xl md:text-2xl lg:text-4xl font-extrabold">
                 +
               </h2>
             </div>
-            <h4 className="xs:text-sm font-Cormorant sm:text-lg xl:text-xl xs:text-center">
+            <h4 className="xs:text-sm font-Cormorant text-lg  xs:text-center">
               Years of Experience
             </h4>
           </div>
           <div className="flex flex-col sm:items-end xs:items-center">
             <div className="inline-flex gap-1 items-center">
-              <h2 className="xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-semibold">
+              <h2 className="text-xl md:text-2xl lg:text-4xl font-semibold">
                 130
               </h2>
-              <h2 className="text-blue-light xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-extrabold">
+              <h2 className="text-blue-light text-xl md:text-2xl lg:text-4xl font-extrabold">
                 +
               </h2>
             </div>
@@ -118,10 +118,10 @@ const IntroSecond = () => {
           </div>
           <div className="flex flex-col sm:items-end xs:items-center">
             <div className="inline-flex gap-1 items-center">
-              <h2 className="xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-semibold">
+              <h2 className="text-xl md:text-2xl lg:text-4xl font-semibold">
                 4000
               </h2>
-              <h2 className="text-blue-light xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-extrabold">
+              <h2 className="text-blue-light text-xl md:text-2xl lg:text-4xl font-extrabold">
                 +
               </h2>
             </div>
