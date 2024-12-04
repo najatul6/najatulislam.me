@@ -15,7 +15,7 @@ const IntroSecond = () => {
     const fetchStreakData = async () => {
       try {
         const token =import.meta.env.VITE_GITHUB_TOKEN;
-        const username = import.meta.env.VITE_GITHUB_USERNAME;
+        const username = import.meta.env.VITE_GITHUB_USER;
 
         const query = `
         query {
@@ -153,7 +153,7 @@ const IntroSecond = () => {
           <div className="flex flex-col sm:items-end xs:items-center">
             <div className="inline-flex gap-1 items-center">
               <h2 className="xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-semibold">
-                2
+                {repositoryCount}
               </h2>
               <h2 className="text-blue-light xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-extrabold">
                 +
@@ -166,7 +166,7 @@ const IntroSecond = () => {
           <div className="flex flex-col sm:items-end xs:items-center">
             <div className="inline-flex gap-1 items-center">
               <h2 className="xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-semibold">
-                27
+                {longestStreak}
               </h2>
               <h2 className="text-blue-light xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-extrabold">
                 +
@@ -179,7 +179,7 @@ const IntroSecond = () => {
           <div className="flex flex-col sm:items-end xs:items-center">
             <div className="inline-flex gap-1 items-center">
               <h2 className="xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-semibold">
-                1000
+                {totalContributions}
               </h2>
               <h2 className="text-blue-light xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-extrabold">
                 +
