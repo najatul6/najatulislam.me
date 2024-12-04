@@ -93,14 +93,14 @@ const IntroSecond = () => {
           <div className="flex flex-col sm:items-end xs:items-center">
             <div className="inline-flex gap-1 items-center">
               <h2 className="text-xl md:text-2xl lg:text-4xl font-semibold">
-                2
+                100
               </h2>
               <h2 className="text-blue-light text-xl md:text-2xl lg:text-4xl font-extrabold">
                 +
               </h2>
             </div>
             <h4 className="xs:text-sm font-Cormorant text-lg  xs:text-center">
-              Years of Experience
+            Repositories
             </h4>
           </div>
           <div className="flex flex-col sm:items-end xs:items-center">

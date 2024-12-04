@@ -100,7 +100,7 @@ const Contact = () => {
                 id="email"
                 name="email"
                 value={formData.email}
-                placeholder="Enter Your Email Address"
+                placeholder="Enter Your E-mail Address"
                 onChange={handleChange}
                 className="w-full bg-transparent appearance-none placeholder:text-blue-light p-4 rounded-xl shadow-in focus:outline-none focus:bg-transparent focus:shadow-up "
               />
