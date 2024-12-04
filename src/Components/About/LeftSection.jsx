@@ -127,7 +127,7 @@ const LeftSection = () => {
         <button className="download-btn shadow-in rounded-xl">
           <span className="button-bg"></span>
           <p className="download-text">
-            Download <span className="text-blue-light">CV</span>
+            Download <span className="text-blue-light">Resume</span>
           </p>
           <p className="download-icon">
             <FaDownload className="animate-bounce text-blue-light" />
