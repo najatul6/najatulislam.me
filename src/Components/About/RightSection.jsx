@@ -1,33 +1,41 @@
 import { motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa";
+import SubTitle from "../Shared/Header/SubTitle";
 
 const RightSection = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center h-full">
+       <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="shadow-up flex justify-center items-center py-2 rounded-xl"
+      >
+        <SubTitle text1={"personal"} text2={"Infos"} />
+      </motion.div>
       <div className="w-full h-full flex gap-5">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="shadow-in tex-sm flex flex-col justify-center items-start font-semibold md:text-xl px-2 md:px-5 py-5 rounded-xl w-full"
+          className="shadow-in tex-sm flex flex-col justify-center items-center font-semibold md:text-xl px-2 md:px-5 py-5 rounded-xl w-full"
         >
-          <div>
-            2<span className="text-blue-light">+</span>
+          <div className="text-2xl"> 
+            130<span className="text-blue-light">+</span>
           </div>
-          <span> YEARS OF </span> EXPERIENCE
+          <span> Longest Streak </span> 
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.9, delay: 0.3 }}
-          className="shadow-in flex flex-col justify-center items-start tex-sm font-semibold md:text-xl px-2 md:px-5 py-5 rounded-xl w-full"
+          className="shadow-in flex flex-col justify-center items-center tex-sm font-semibold md:text-xl px-2 md:px-5 py-5 rounded-xl w-full"
         >
-          <div>
+          <div className="text-2xl">
             {" "}
-            2<span className="text-blue-light">+</span>
+            4000<span className="text-blue-light">+</span>
           </div>{" "}
-          <span> YEARS OF </span>
-          EXPERIENCE
+          <span> Total Contributions</span>
         </motion.div>
         
       </div>
@@ -54,23 +62,4 @@ const RightSection = () => {
 
 export default RightSection;
 
-{
-  /* <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.4 }}
-          className="shadow-up flex flex-col justify-center items-start tex-sm font-semibold md:text-xl px-2 md:px-5 py-5 rounded-xl w-full"
-        >
-          <div>2<span className="text-blue-light">+</span> </div> <span> YEARS OF </span>
-          EXPERIENCE
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1.1, delay: 0.5 }}
-          className="shadow-up flex flex-col justify-center items-start tex-sm font-semibold md:text-xl px-2 md:px-5 py-5 rounded-xl w-full"
-        >
-          <div>2<span className="text-blue-light">+</span></div> <span> YEARS OF </span>
-          EXPERIENCE
-        </motion.div> */
-}
+
