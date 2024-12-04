@@ -5,7 +5,7 @@ const Button = ({ text, icon, link, iconFirst }) => {
     <Link to={link} target="_blank">
       <button className="shadow-in duration-300 w-full ease-in-out rounded-xl text-xs md:text-lg lg:text-2xl font-medium px-2 md:px-4 py-2 hover:shadow-up hover:text-blue-light active:shadow-in active:text-blue-light">
         <p className="flex justify-center items-center gap-2">
-          {iconFirst} {text} {icon}
+          {iconFirst} {text} <span className="animate-bounce"> {icon}</span>
         </p>
       </button>
     </Link>
