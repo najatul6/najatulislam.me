@@ -2,84 +2,13 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import SocialIcons from "../SocialIcons/SocialIcons";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useEffect } from "react";
+
 
 const IntroSecond = () => {
-  const [longestStreak, setLongestStreak] = useState(0);
-  const [totalContributions, setTotalContributions] = useState(0);
-  const [repositoryCount, setRepositoryCount] = useState(0);
-
   useEffect(() => {
     AOS.init();
-    const fetchStreakData = async () => {
-      try {
-        const token = import.meta.env.VITE_GITHUB_TOKEN;
-        const username = import.meta.env.VITE_GITHUB_USER;
-
-        const query = `
-        query {
-          user(login: "${username}") {
-            contributionsCollection {
-              contributionCalendar {
-                weeks {
-                  contributionDays {
-                    contributionCount
-                    date
-                  }
-                }
-              }
-            }
-            repositories {
-              totalCount
-            }
-          }
-        }
-      `;
-
-        const response = await axios.post(
-          "https://api.github.com/graphql",
-          { query },
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-              "Content-Type": "application/json",
-            },
-          }
-        );
-
-        const data = response.data.data.user;
-
-        // Process contributions
-        const days =
-          data.contributionsCollection.contributionCalendar.weeks.flatMap(
-            (week) => week.contributionDays
-          );
-
-        let currentStreak = 0;
-        let maxStreak = 0;
-        let totalContributionsCount = 0;
-
-        days.forEach((day) => {
-          totalContributionsCount += day.contributionCount;
-          if (day.contributionCount > 0) {
-            currentStreak++;
-            maxStreak = Math.max(maxStreak, currentStreak);
-          } else {
-            currentStreak = 0;
-          }
-        });
-
-        // Set state values
-        setLongestStreak(maxStreak);
-        setTotalContributions(totalContributionsCount);
-        setRepositoryCount(data.repositories.totalCount);
-      } catch (error) {
-        console.error(error.message);
-      }
-    };
-
-    fetchStreakData();
+    
   }, []);
   const handleScrollToContact = (e) => {
     e.preventDefault();
@@ -138,7 +67,9 @@ const IntroSecond = () => {
                 </p>
               </button>
             </a>
-            <div className="py-5">
+            <div
+            
+            className="py-5">
               <SocialIcons />
             </div>
           </div>
@@ -153,7 +84,7 @@ const IntroSecond = () => {
           <div className="flex flex-col sm:items-end xs:items-center">
             <div className="inline-flex gap-1 items-center">
               <h2 className="xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-semibold">
-                {repositoryCount}
+                2
               </h2>
               <h2 className="text-blue-light xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-extrabold">
                 +
@@ -166,7 +97,7 @@ const IntroSecond = () => {
           <div className="flex flex-col sm:items-end xs:items-center">
             <div className="inline-flex gap-1 items-center">
               <h2 className="xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-semibold">
-                {longestStreak}
+                128
               </h2>
               <h2 className="text-blue-light xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-extrabold">
                 +
@@ -179,7 +110,7 @@ const IntroSecond = () => {
           <div className="flex flex-col sm:items-end xs:items-center">
             <div className="inline-flex gap-1 items-center">
               <h2 className="xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-semibold">
-                {totalContributions}
+                4000
               </h2>
               <h2 className="text-blue-light xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-extrabold">
                 +
