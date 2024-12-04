@@ -12,7 +12,7 @@ const RightSection = () => {
     setIsLoading(true); 
     const link = document.createElement("a");
     link.href = "/Najatul'sCv.pdf"; 
-    link.download = "Md_Najatul_Islam_Resume.pdf"; 
+    link.download = "Najatul_Islam_Cv.pdf"; 
     document.body.appendChild(link);
 
    
