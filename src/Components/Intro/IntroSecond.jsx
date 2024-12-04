@@ -97,7 +97,7 @@ const IntroSecond = () => {
           <div className="flex flex-col sm:items-end xs:items-center">
             <div className="inline-flex gap-1 items-center">
               <h2 className="xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-semibold">
-                128
+                130
               </h2>
               <h2 className="text-blue-light xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-extrabold">
                 +
