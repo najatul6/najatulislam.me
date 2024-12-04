@@ -43,6 +43,7 @@ const IntroSecond = () => {
           {
             headers: {
               Authorization: `Bearer ${token}`,
+              "Content-Type": "application/json",
             },
           }
         );
@@ -74,7 +75,7 @@ const IntroSecond = () => {
         setTotalContributions(totalContributionsCount);
         setRepositoryCount(data.repositories.totalCount);
       } catch (error) {
-        console.error("Error fetching GitHub data:", error);
+        console.error(error.message);
       }
     };
 
