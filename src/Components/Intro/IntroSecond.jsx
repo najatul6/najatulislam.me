@@ -8,6 +8,7 @@ import { useEffect } from "react";
 const IntroSecond = () => {
   useEffect(() => {
     AOS.init();
+    
   }, []);
   const handleScrollToContact = (e) => {
     e.preventDefault();
