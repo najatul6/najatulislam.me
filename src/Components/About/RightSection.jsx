@@ -1,8 +1,27 @@
 import { motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa";
 import SubTitle from "../Shared/Header/SubTitle";
+import { useState } from "react";
+import { MdWifiTethering } from "react-icons/md";
 
 const RightSection = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
+  // Download Resume
+  const handleDownload = () => {
+    setIsLoading(true); 
+    const link = document.createElement("a");
+    link.href = "/Najatul'sResume.pdf"; 
+    link.download = "Md_Najatul_Islam_Resume.pdf"; 
+    document.body.appendChild(link);
+
+   
+    setTimeout(() => {
+      link.click();
+      document.body.removeChild(link);
+      setIsLoading(false); 
+    }, 2000); 
+  };
   return (
     <div className="w-full flex flex-col justify-center items-center h-full">
        <motion.div
@@ -64,23 +83,38 @@ const RightSection = () => {
         </motion.div>
         
       </div>
-      {/* Download Button  */}
-      <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="flex justify-center items-center w-full col-span-2 mt-5"
+     {/* Download Button  */}
+     <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="flex justify-center items-center w-full mt-10"
+      >
+        <button
+          onClick={handleDownload}
+          className={`download-btn shadow-in rounded-xl flex justify-center items-center ${
+            isLoading ? "cursor-not-allowed opacity-50" : ""
+          }`}
+          disabled={isLoading}
         >
-          <button className="download-btn shadow-in rounded-xl">
-            <span className="button-bg"></span>
-            <p className="download-text">
-              Download <span className="text-blue-light capitalize">Resume</span>
-            </p>
-            <p className="download-icon">
-              <FaDownload className="animate-bounce text-blue-light" />
-            </p>
-          </button>
-        </motion.div>
+          <span className="button-bg"></span>
+          {isLoading ? (
+            <div className="flex items-center gap-2">
+              <span className="animate-spin"><MdWifiTethering /></span> 
+              <p className="download-text">Downloading...</p>
+            </div>
+          ) : (
+            <>
+              <p className="download-text">
+                Download <span className="text-blue-light">Resume</span>
+              </p>
+              <p className="download-icon">
+                <FaDownload className="animate-bounce text-blue-light" />
+              </p>
+            </>
+          )}
+        </button>
+      </motion.div>
     </div>
   );
 };
