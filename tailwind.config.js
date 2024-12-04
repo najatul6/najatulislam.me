@@ -38,6 +38,8 @@ export default {
       fontFamily: {
         Cormorant: ["Comfortaa", "serif"],
         Montserrat: ["Montserrat", "sans-serif;"],
+        Nunito: ['"Nunito", sans-serif'],
+
       },
       animation: {
         profileAnimate: "profileAnimate 5s ease-in-out infinite",

@@ -42,12 +42,12 @@ const IntroSecond = () => {
           </h4>
           <h1 className="text-xl md:text-4xl font-semibold font-Montserrat mt-2">
             I&apos;m{" "}
-            <span className=" font-Cormorant font-extrabold text-white">
+            <span className="font-extrabold text-white font-Nunito">
               {" "}
               Najatul{" "}
             </span>
           </h1>
-          <h1 className="text-3xl md:text-4xl font-extrabold text-white font-Cormorant">
+          <h1 className="text-3xl md:text-4xl font-extrabold text-white  font-Nunito">
             Islam
           </h1>
           <h4 className="text-blue-light mt-4 lg:text-2xl font-bold font-Cormorant">
