@@ -1,7 +1,26 @@
 import { FaDownload } from "react-icons/fa6";
 import SubTitle from "../Shared/Header/SubTitle";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { MdWifiTethering } from "react-icons/md";
 const LeftSection = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
+  // Download Resume
+  const handleDownload = () => {
+    setIsLoading(true); 
+    const link = document.createElement("a");
+    link.href = "/Najatul'sResume.pdf"; 
+    link.download = "Md_Najatul_Islam_Resume.pdf"; 
+    document.body.appendChild(link);
+
+   
+    setTimeout(() => {
+      link.click();
+      document.body.removeChild(link);
+      setIsLoading(false); 
+    }, 2000); 
+  };
   return (
     <>
       <motion.div
@@ -33,7 +52,7 @@ const LeftSection = () => {
             </span>
           </p>
           <p>
-            Nationality : 
+            Nationality :
             <span className="text-white font-Cormorant font-semibold">
               Bangladeshi
             </span>
@@ -124,14 +143,29 @@ const LeftSection = () => {
         transition={{ duration: 1 }}
         className="flex justify-center items-center w-full mt-10"
       >
-        <button className="download-btn shadow-in rounded-xl">
+        <button
+          onClick={handleDownload}
+          className={`download-btn shadow-in rounded-xl flex justify-center items-center ${
+            isLoading ? "cursor-not-allowed opacity-50" : ""
+          }`}
+          disabled={isLoading}
+        >
           <span className="button-bg"></span>
-          <p className="download-text">
-            Download <span className="text-blue-light">Resume</span>
-          </p>
-          <p className="download-icon">
-            <FaDownload className="animate-bounce text-blue-light" />
-          </p>
+          {isLoading ? (
+            <div className="flex items-center gap-2">
+              <span className="animate-spin"><MdWifiTethering /></span> 
+              <p className="download-text">Downloading...</p>
+            </div>
+          ) : (
+            <>
+              <p className="download-text">
+                Download <span className="text-blue-light">Resume</span>
+              </p>
+              <p className="download-icon">
+                <FaDownload className="animate-bounce text-blue-light" />
+              </p>
+            </>
+          )}
         </button>
       </motion.div>
     </>
