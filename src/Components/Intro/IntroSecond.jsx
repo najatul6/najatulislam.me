@@ -18,8 +18,8 @@ const IntroSecond = () => {
     }
   };
   return (
-    <div className="relative">
-      <div className="lg:absolute top-0 bottom-0 lg:left-[40%] flex justify-center items-center shadow-in overflow-hidden rounded-full">
+    <div className="">
+      {/* <div className="lg:absolute top-0 bottom-0 lg:left-[40%] flex justify-center items-center shadow-in overflow-hidden rounded-full">
         <img
           data-aos="zoom-in"
           data-aos-delay="50"
@@ -28,7 +28,7 @@ const IntroSecond = () => {
           src="/najatul6.png"
           alt="profile Image"
         />
-      </div>
+      </div> */}
 
       <div className="h-full px-4 py-5 lg:py-0 flex items-center ">
         <div
@@ -74,7 +74,16 @@ const IntroSecond = () => {
             </div>
           </div>
         </div>
-
+        <div className="flex justify-center items-center shadow-in overflow-hidden rounded-full">
+        <img
+          data-aos="zoom-in"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          className="lg:h-full md:h-[450px] sm:h-[480px] imageShadow "
+          src="/najatul6.png"
+          alt="profile Image"
+        />
+      </div>
         <div
           data-aos="fade-left"
           data-aos-delay="50"
