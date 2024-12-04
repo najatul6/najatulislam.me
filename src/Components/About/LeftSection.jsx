@@ -33,7 +33,7 @@ const LeftSection = () => {
             </span>
           </p>
           <p>
-            Nationality :
+            Nationality : 
             <span className="text-white font-Cormorant font-semibold">
               Bangladeshi
             </span>
@@ -94,7 +94,7 @@ const LeftSection = () => {
             </a>
           </p>
           <p>
-            Email :{" "}
+            E-mail :{" "}
             <a
               href="mailto:mdnajatulislam.develop@gmail.com"
               className="text-white font-Cormorant font-semibold text-wrap"
