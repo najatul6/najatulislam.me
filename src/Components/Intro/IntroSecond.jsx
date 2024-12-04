@@ -30,7 +30,7 @@ const IntroSecond = () => {
         />
       </div> */}
 
-      <div className="h-full px-4 py-5 lg:py-0 flex items-center ">
+      <div className="h-full px-4 py-5 lg:py-0 flex flex-col md:flex-row items-center ">
         <div
           data-aos="fade-right"
           data-aos-delay="20"
