@@ -126,7 +126,7 @@ const IntroSecond = () => {
               </h2>
             </div>
             <h4 className="xs:text-sm font-Cormorant sm:text-lg xl:text-xl xs:text-center">
-              Component Contribution
+              Contribution
             </h4>
           </div>
         </div>
