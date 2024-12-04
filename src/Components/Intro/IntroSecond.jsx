@@ -74,7 +74,7 @@ const IntroSecond = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center shadow-in overflow-hidden rounded-full">
+        <div className="flex justify-center items-center shadow-in overflow-hidden rounded-full w-full">
         <img
           data-aos="zoom-in"
           data-aos-delay="50"
