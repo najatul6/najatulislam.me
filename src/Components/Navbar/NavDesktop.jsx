@@ -70,7 +70,7 @@ const NavDesktop = () => {
               <a
                 onClick={(e) => handleLinkClick(e, href)}
                 href={href}
-                className={`flex items-center gap-1 text-xl font-medium cursor-pointer transition-all 
+                className={`flex items-center gap-1 text-lg font-medium cursor-pointer transition-all 
                   ${activeRoute === href
                     ? "text-blue-light font-bold" // Active state
                     : "text-light-grey hover:text-blue-light focus:text-blue-light"}`}
