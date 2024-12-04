@@ -11,7 +11,7 @@ const RightSection = () => {
   const handleDownload = () => {
     setIsLoading(true); 
     const link = document.createElement("a");
-    link.href = "/Najatul'sResume.pdf"; 
+    link.href = "/Najatul'sCv.pdf"; 
     link.download = "Md_Najatul_Islam_Resume.pdf"; 
     document.body.appendChild(link);
 
@@ -106,7 +106,7 @@ const RightSection = () => {
           ) : (
             <>
               <p className="download-text">
-                Download <span className="text-blue-light">Resume</span>
+                Download <span className="text-blue-light">CV</span>
               </p>
               <p className="download-icon">
                 <FaDownload className="animate-bounce text-blue-light" />
