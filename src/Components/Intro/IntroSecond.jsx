@@ -5,7 +5,6 @@ import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-
 const IntroSecond = () => {
   const [longestStreak, setLongestStreak] = useState(0);
   const [totalContributions, setTotalContributions] = useState(0);
@@ -15,7 +14,7 @@ const IntroSecond = () => {
     AOS.init();
     const fetchStreakData = async () => {
       try {
-        const token =import.meta.env.VITE_GITHUB_TOKEN;
+        const token = import.meta.env.VITE_GITHUB_TOKEN;
         const username = import.meta.env.VITE_GITHUB_USER;
 
         const query = `
@@ -38,47 +37,48 @@ const IntroSecond = () => {
         }
       `;
 
-      const response = await axios.post(
-        "https://api.github.com/graphql",
-        { query },
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
+        const response = await axios.post(
+          "https://api.github.com/graphql",
+          { query },
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
+        );
 
-      const data = response.data.data.user;
+        const data = response.data.data.user;
 
-      // Process contributions
-      const days = data.contributionsCollection.contributionCalendar.weeks.flatMap(
-        (week) => week.contributionDays
-      );
+        // Process contributions
+        const days =
+          data.contributionsCollection.contributionCalendar.weeks.flatMap(
+            (week) => week.contributionDays
+          );
 
-      let currentStreak = 0;
-      let maxStreak = 0;
-      let totalContributionsCount = 0;
+        let currentStreak = 0;
+        let maxStreak = 0;
+        let totalContributionsCount = 0;
 
-      days.forEach((day) => {
-        totalContributionsCount += day.contributionCount;
-        if (day.contributionCount > 0) {
-          currentStreak++;
-          maxStreak = Math.max(maxStreak, currentStreak);
-        } else {
-          currentStreak = 0;
-        }
-      });
+        days.forEach((day) => {
+          totalContributionsCount += day.contributionCount;
+          if (day.contributionCount > 0) {
+            currentStreak++;
+            maxStreak = Math.max(maxStreak, currentStreak);
+          } else {
+            currentStreak = 0;
+          }
+        });
 
-      // Set state values
-      setLongestStreak(maxStreak);
-      setTotalContributions(totalContributionsCount);
-      setRepositoryCount(data.repositories.totalCount);
-    } catch (error) {
-      console.error("Error fetching GitHub data:", error);
-    }
-  };
+        // Set state values
+        setLongestStreak(maxStreak);
+        setTotalContributions(totalContributionsCount);
+        setRepositoryCount(data.repositories.totalCount);
+      } catch (error) {
+        console.error("Error fetching GitHub data:", error);
+      }
+    };
 
-  fetchStreakData();
+    fetchStreakData();
   }, []);
   const handleScrollToContact = (e) => {
     e.preventDefault();
@@ -137,9 +137,7 @@ const IntroSecond = () => {
                 </p>
               </button>
             </a>
-            <div
-            
-            className="py-5">
+            <div className="py-5">
               <SocialIcons />
             </div>
           </div>
