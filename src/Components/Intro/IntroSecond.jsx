@@ -38,7 +38,7 @@ const IntroSecond = () => {
           className="w-full flex flex-col gap-2"
         >
           <h4 className="text-lg lg:text-2xl font-semibold text-white">
-            Hey There
+            Hey There,
           </h4>
           <h1 className="text-4xl md:text-6xl font-semibold font-Montserrat mt-2">
             I&apos;m{" "}

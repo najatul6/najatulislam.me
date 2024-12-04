@@ -2,7 +2,7 @@ export const education=[
     {
         id:"1yy0-lkgo_i",
         degree: 'Diploma in Engineering',
-        institution: 'Rangpur Polytechnic institute, Rangpur',
+        institution: 'Rangpur Polytechnic Institute, Rangpur',
         startYear: "2019",
         endYear:"2024",
         description:"Pursued a Diploma in Computer Technology at Rangpur Polytechnic Institute, Rangpur (2019-2024), honing technical expertise and developing professional skills for a successful career in the IT industry."
@@ -26,9 +26,9 @@ export const education=[
     {
         id:"1yy0-ikgo_e",
         degree: 'Digital Marketing',
-        institution: 'Learning & Earning Development project (LEDP), Kurigram',
+        institution: 'Learning & Earning Development Project (LEDP), Kurigram',
         startYear:"2019",
         endYear: "2020",
-        description:"Attended Bagua Anantapur High School (2016-2018), providing a foundation for academics and personal growth."
+        description:"Learn about digital marketing and how to use it to grow your business. Explore the core principles of digital marketing and how to use them to grow your business."
     }
 ]
