@@ -40,7 +40,7 @@ const IntroSecond = () => {
           <h4 className="text-md lg:text-xl font-semibold text-white">
             Hey There ,
           </h4>
-          <h1 className="text-2xl md:text-4xl  font-Montserrat mt-2 font-bold">
+          <h1 className="text-2xl md:text-4xl text-white font-Montserrat mt-2 font-bold">
             I&apos;m{" "}
             <span className="text-2xl md:text-4xl font-extrabold text-white font-Nunito">
               {" "}
