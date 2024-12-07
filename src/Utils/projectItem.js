@@ -9,6 +9,7 @@ import project8 from "../assets/projects/HomePage.png";
 import project9 from "../assets/projects/I Will Build Responsive Websites for Pressure Washing, Roofing,Painter Businesses.png";
 import project10 from "../assets/projects/daragon News.png";
 import project11 from "../assets/projects/gamingZone.png"
+import project12 from "../assets/projects/tex-source-bd.png"
 
 export const projectItem = [
   {
@@ -48,22 +49,14 @@ export const projectItem = [
     github_link: "https://github.com/najatul6/dream-prime-estates-client",
   },
   {
-    id: "kjdfttif_343",
-    name: "powerhouse gym",
+    id: "kjdfif_34e33",
+    name: "Tex source international",
     description:
-      "This is an Full-Stack Real-estate agency website.User can Select property and buy property",
-    features: [
-      "Have admin and user different dashboard.",
-      "Admin can delete, manage services.",
-      "Admin can Make Admin also.",
-      "Agent Can add property and delete and get offer",
-      "User can Login via (Google Sign-in,FaceBook Sign-in).",
-      "React js, React Router, Firebase Authentication",
-      "Node js,Express js, MongoDB",
-    ],
-    image: `${project3}`,
-    liveLink: "https://powerhouse-gym.vercel.app/",
-    github_link: "https://github.com/najatul6/powerhouse-gym",
+      "This is a Static Buying and trading house website.",
+    
+    image: `${project12}`,
+    liveLink: "http://tex-source.com.bd/",
+    github_link: "https://github.com/najatul6",
   },
   {
     id: "kjdfrrif_343",
@@ -84,8 +77,8 @@ export const projectItem = [
     github_link: "https://github.com/najatul6/cars-doctor-client",
   },
   {
-    id: "kjd5rfif_343",
-    name: "bistro boss restaurant ",
+    id: "kjdfttif_343",
+    name: "powerhouse gym",
     description:
       "This is an Full-Stack Real-estate agency website.User can Select property and buy property",
     features: [
@@ -97,9 +90,9 @@ export const projectItem = [
       "React js, React Router, Firebase Authentication",
       "Node js,Express js, MongoDB",
     ],
-    image: `${project5}`,
-    liveLink: "https://bistro-boss-restaurant-9ee06.web.app/",
-    github_link: "https://github.com/najatul6/bistro-boss-restaurant-client",
+    image: `${project3}`,
+    liveLink: "https://powerhouse-gym.vercel.app/",
+    github_link: "https://github.com/najatul6/powerhouse-gym",
   },
   {
     id: "kjd776fr6if_343",
@@ -175,8 +168,8 @@ export const projectItem = [
     github_link: "https://github.com/najatul6/NiN-Washing",
   },
   {
-    id: "kjd77t6fif_343",
-    name: "dragon newsletter",
+    id: "kjd5rfif_343",
+    name: "bistro boss restaurant ",
     description:
       "This is an Full-Stack Real-estate agency website.User can Select property and buy property",
     features: [
@@ -188,10 +181,11 @@ export const projectItem = [
       "React js, React Router, Firebase Authentication",
       "Node js,Express js, MongoDB",
     ],
-    image: `${project1}`,
-    liveLink: "https://dragon-newsletter-with-react.web.app/",
-    github_link: "https://github.com/najatul6/dragon-newsletter-with-react",
+    image: `${project5}`,
+    liveLink: "https://bistro-boss-restaurant-9ee06.web.app/",
+    github_link: "https://github.com/najatul6/bistro-boss-restaurant-client",
   },
+  
   {
     id: "kj_df77_t6fif_343",
     name: "dragon newsletter",
