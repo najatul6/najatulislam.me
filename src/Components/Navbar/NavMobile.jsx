@@ -99,8 +99,8 @@ const NavMobile = () => {
                       className="flex items-center justify-between w-full p-5 rounded-xl hover:font-bold"
                       href={route.href}
                     >
-                      <span className="flex gap-1 text-lg">{route.title}</span>
-                      <Icon className="text-xl" />
+                      <span className="flex gap-1 text-base">{route.title}</span>
+                      <Icon className="text-base" />
                     </a>
                   </motion.li>
                 );
