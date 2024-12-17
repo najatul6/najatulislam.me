@@ -1,6 +1,5 @@
 import NavDesktop from "./NavDesktop";
 import NavMobile from "./NavMobile";
-// import logo from "../../assets/najatul6logo.svg";
 
 const Navbar = () => {
   return (
