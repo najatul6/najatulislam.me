@@ -243,6 +243,24 @@ export const projectItem = [
     github_link: "https://github.com/najatul6/dragon-newsletter-with-react",
   },
   {
+    id: "kj_dew377_t68f_if_343",
+    name: "Dream School",
+    description:
+      "This is an Full-Stack School website.User can all information about school",
+    features: [
+      "Have admin and user different dashboard.",
+      "Admin can delete, manage services.",
+      "Admin can Make Admin also.",
+      "Agent Can add property and delete and get offer",
+      "User can Login via (Google Sign-in,FaceBook Sign-in).",
+      "React js, React Router, Firebase Authentication",
+      "Node js,Express js, MongoDB",
+    ],
+    image: `${project11}`,
+    liveLink: "https://school-template-hazel.vercel.app/",
+    github_link: "https://github.com/najatul6/school-template",
+  },
+  {
     id: "kj_d77_t68f_if_343",
     name: "Gaming Zone",
     description:
