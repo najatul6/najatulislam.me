@@ -13,8 +13,27 @@ import project12 from "../assets/projects/tex-source-bd.png"
 import project13 from "../assets/projects/certimark.png"
 import project14 from "../assets/projects/foddy.png"
 import project15 from "../assets/projects/dreamSchool.png"
+import project16 from "../assets/projects/storen.png"
 
 export const projectItem = [
+  {
+    id: "kewfjd7_fie2f_343",
+    name: "StoreN",
+    description:
+      "This is an Full-Stack store website.User can get product and buy product",
+    features: [
+      "Have admin and user different dashboard.",
+      "Admin can delete, manage services.",
+      "Admin can Make Admin also.",
+      "Agent Can add property and delete and get offer",
+      "User can Login via (Google Sign-in,FaceBook Sign-in).",
+      "React js, React Router, Firebase Authentication",
+      "Node js,Express js, MongoDB",
+    ],
+    image: `${project16}`,
+    liveLink: "https://storen-client.vercel.app/",
+    github_link: "https://github.com/najatul6/storen-client",
+  },
   {
     id: "kjd7_fie2f_343",
     name: "Certimark",
