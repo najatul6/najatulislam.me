@@ -12,6 +12,7 @@ import project11 from "../assets/projects/gamingZone.png"
 import project12 from "../assets/projects/tex-source-bd.png"
 import project13 from "../assets/projects/certimark.png"
 import project14 from "../assets/projects/foddy.png"
+import project15 from "../assets/projects/dreamSchool.png"
 
 export const projectItem = [
   {
@@ -256,7 +257,7 @@ export const projectItem = [
       "React js, React Router, Firebase Authentication",
       "Node js,Express js, MongoDB",
     ],
-    image: `${project11}`,
+    image: `${project15}`,
     liveLink: "https://school-template-hazel.vercel.app/",
     github_link: "https://github.com/najatul6/school-template",
   },
