@@ -10,8 +10,46 @@ import project9 from "../assets/projects/I Will Build Responsive Websites for Pr
 import project10 from "../assets/projects/daragon News.png";
 import project11 from "../assets/projects/gamingZone.png"
 import project12 from "../assets/projects/tex-source-bd.png"
+import project13 from "../assets/projects/certimark.png"
+import project14 from "../assets/projects/foddy.png"
 
 export const projectItem = [
+  {
+    id: "kjd7_fie2f_343",
+    name: "Certimark",
+    description:
+      "This is an Full-Stack College website.User can get Certificate and apply",
+    features: [
+      "Have admin and user different dashboard.",
+      "Admin can delete, manage services.",
+      "Admin can Make Admin also.",
+      "Agent Can add property and delete and get offer",
+      "User can Login via (Google Sign-in,FaceBook Sign-in).",
+      "React js, React Router, Firebase Authentication",
+      "Node js,Express js, MongoDB",
+    ],
+    image: `${project13}`,
+    liveLink: "https://certi-mark.vercel.app/",
+    github_link: "https://github.com/najatul6",
+  },
+  {
+    id: "kjiu_dfie2f_343",
+    name: "Foddy",
+    description:
+      "This is an Full-Stack Restaurant website.User can Select food and buy food",
+    features: [
+      "Have admin and user different dashboard.",
+      "Admin can delete, manage services.",
+      "Admin can Make Admin also.",
+      "Agent Can add property and delete and get offer",
+      "User can Login via (Google Sign-in,FaceBook Sign-in).",
+      "React js, React Router, Firebase Authentication",
+      "Node js,Express js, MongoDB",
+    ],
+    image: `${project14}`,
+    liveLink: "https://foddy-three.vercel.app/",
+    github_link: "https://github.com/najatul6/foddy",
+  },
   {
     id: "kjdfie2f_343",
     name: "Vectorizer",
