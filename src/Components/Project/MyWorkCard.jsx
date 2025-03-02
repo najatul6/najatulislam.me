@@ -19,7 +19,6 @@ const MyWorkCard = ({ item }) => {
   return (
     <div className="shadow-in p-2 md:p-3 rounded-xl">
       <motion.div
-        // whileHover={{ scale: 1 }}
         className=" relative overflow-hidden  shadow-in h-[300px]"
         onMouseOver={handleHover}
         onMouseOut={handleHoverOut}
