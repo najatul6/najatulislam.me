@@ -2,10 +2,10 @@
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import "swiper/css";
 import Header from "../../Components/Shared/Header/Header";
 import { projectItem } from "../../Utils/projectItem";
 import MyWorkCard from "../../Components/Project/MyWorkCard";
+import "swiper/css";
 
 const MyWork = () => {
   return (
@@ -34,7 +34,7 @@ const MyWork = () => {
           breakpoints={{
             640: { slidesPerView: 2 },
             768: { slidesPerView: 3 },
-            1024: { slidesPerView: 4 },
+            1024: { slidesPerView: 3 },
           }}
           className="mySwiper"
         >

@@ -28,7 +28,7 @@ const MyWorkCard = ({ item }) => {
           src={item?.image}
           alt={item?.name}
           ref={imageRef}
-          className=" w-full  transition-all duration-1000"
+          className="w-full  transition-all duration-1000"
         />
         <div className="absolute w-full bottom-0 flex bg-high-black flex-col justify-center items-center px-3 py-5  transition-opacity duration-500  shadow-in">
           <div className="flex gap-6 justify-start items-center duration-300">
