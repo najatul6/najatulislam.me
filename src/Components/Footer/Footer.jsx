@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="flex justify-center items-center ">
         {/* <motion.img
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
           src={logo}
           alt="Logo"
@@ -18,7 +18,7 @@ const Footer = () => {
         /> */}
         <motion.a
         initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
         href="/"
         className="md:text-3xl rounded-xl font-extrabold  text-light-grey cursor-pointer  transition-all mb-8 text-wrap"
@@ -30,7 +30,7 @@ const Footer = () => {
           return (
             <motion.div
               initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.1, delay: index * 0.1 }}
               key={href}
             >

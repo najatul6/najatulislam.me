@@ -68,7 +68,7 @@ const Contact = () => {
       <div className="px-5 py-10 lg:px-10 lg:py-16 rounded-xl shadow-in">
         <motion.form
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
           onSubmit={handleSubmit}
           className="flex flex-col gap-6"
@@ -87,7 +87,7 @@ const Contact = () => {
               {errors.name && (
                 <motion.p
                   initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
+                  animate={{ opacity: 1 }}
                   className="text-rose-600 py-2 px-5"
                 >
                   {errors.name}
@@ -107,7 +107,7 @@ const Contact = () => {
               {errors.email && (
                 <motion.p
                   initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
+                  animate={{ opacity: 1 }}
                   className="text-rose-600 py-2 px-5"
                 >
                   {errors.email}
@@ -128,7 +128,7 @@ const Contact = () => {
             {errors.message && (
               <motion.p
                 initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
+                animate={{ opacity: 1 }}
                 className="text-rose-600 py-2 px-5"
               >
                 {errors.message}

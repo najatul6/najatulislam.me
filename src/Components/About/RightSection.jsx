@@ -26,7 +26,7 @@ const RightSection = () => {
     <div className="w-full flex flex-col justify-center items-center h-full">
        <motion.div
         initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         className="shadow-up w-full flex justify-center items-center py-2 mb-4 rounded-xl"
       >
@@ -36,7 +36,7 @@ const RightSection = () => {
       {/* Total Stars: */}
         <motion.div
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="shadow-in tex-sm flex flex-col justify-center items-center font-Cormorant font-semibold md:text-xl px-2 md:px-5 py-5 rounded-xl w-full"
         >
@@ -48,7 +48,7 @@ const RightSection = () => {
 
         <motion.div
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="shadow-in tex-sm flex flex-col justify-center items-center font-Cormorant font-semibold md:text-xl px-2 md:px-5 py-5 rounded-xl w-full"
         >
@@ -59,7 +59,7 @@ const RightSection = () => {
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.9, delay: 0.3 }}
           className="shadow-in flex flex-col justify-center items-center tex-sm font-Cormorant font-semibold md:text-xl px-2 md:px-5 py-5 rounded-xl w-full"
         >
@@ -71,7 +71,7 @@ const RightSection = () => {
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.9, delay: 0.3 }}
           className="shadow-in flex flex-col justify-center items-center tex-sm font-Cormorant font-semibold md:text-xl px-2 md:px-5 py-5 rounded-xl w-full"
         >
@@ -86,7 +86,7 @@ const RightSection = () => {
      {/* Download Button  */}
      <motion.div
         initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         className="flex justify-center items-center w-full mt-10"
       >

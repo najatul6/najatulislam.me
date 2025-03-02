@@ -9,7 +9,7 @@ const MyWork = () => {
     <div className="mb-8">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3 }}
       >
         <Header text1={"My"} text2={"Projects"} />
@@ -20,7 +20,7 @@ const MyWork = () => {
             {projectItem?.map((item, idx) => (
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                animate={{ opacity: 1, scale: 1 }}
                 transition={{
                   type: "spring",
                   stiffness: 260,

@@ -25,7 +25,7 @@ const LeftSection = () => {
     <>
       <motion.div
         initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         className="shadow-up flex justify-center items-center py-2 rounded-xl"
       >
@@ -34,7 +34,7 @@ const LeftSection = () => {
       <div className="flex flex-col md:flex-row gap-4 md:gap-5 justify-center md:items-center text-sm lg:text-lg mt-5">
         <motion.div
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex flex-col gap-4"
         >
@@ -80,7 +80,7 @@ const LeftSection = () => {
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex flex-col gap-4"
         >
@@ -139,7 +139,7 @@ const LeftSection = () => {
       {/* Download Button  */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         className="flex justify-center items-center w-full mt-10"
       >
