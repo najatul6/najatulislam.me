@@ -31,19 +31,19 @@ const MyWorkCard = ({ item }) => {
           ref={imageRef}
           className="w-full transition-all duration-1000"
         />
-        <div className="absolute w-full bottom-0 flex bg-high-black flex-col justify-center items-center px-3 py-5  transition-opacity duration-500  shadow-in">
-          <div className="flex gap-6 justify-start items-center duration-300 border w-full">
+        <div className="absolute w-full bottom-0 flex bg-high-black flex-col justify-center items-center px-3 py-3  transition-opacity duration-500  shadow-in">
+          <div className="flex gap-4 justify-start items-center duration-300 w-full">
              <Link to={item?.github_link} target="_blank" className="w-full">
-                  <button className="shadow-in w-full  rounded-xl text-xs md:text-lg lg:text-2xl font-medium px-2 md:px-4 py-2 transition-all duration-500 hover:shadow-up hover:text-blue-light active:shadow-in active:text-blue-light">
+                  <button className="shadow-in w-full  rounded-xl text-base md:text-lg font-medium px-2 md:px-4 py-2 transition-all duration-500 hover:shadow-up hover:text-blue-light active:shadow-in active:text-blue-light">
                     <p className="flex justify-center items-center gap-2">
-                      Git Hub <span className="animate-bounce"> <IoGitBranch /></span>
+                      Git Hub <span className="animate-bounce text-blue-light"> <IoGitBranch /></span>
                     </p>
                   </button>
                 </Link>
              <Link to={item?.liveLink} target="_blank" className="w-full">
-                  <button className="shadow-in w-full  rounded-xl text-xs md:text-lg lg:text-2xl font-medium px-2 md:px-4 py-2 transition-all duration-500 hover:shadow-up hover:text-blue-light active:shadow-in active:text-blue-light">
+                  <button className="shadow-in w-full  rounded-xl text-base md:text-lg font-medium px-2 md:px-4 py-2 transition-all duration-500 hover:shadow-up hover:text-blue-light active:shadow-in active:text-blue-light">
                     <p className="flex justify-center items-center gap-2">
-                    Live Link <span className="animate-bounce"> <VscLiveShare /></span>
+                    Live Link <span className="animate-bounce text-blue-light"> <VscLiveShare /></span>
                     </p>
                   </button>
                 </Link>
