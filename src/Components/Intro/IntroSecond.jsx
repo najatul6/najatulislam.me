@@ -70,7 +70,7 @@ const IntroSecond = () => {
           </div>
           <div className="flex flex-col sm:items-end xs:items-center">
             <div className="inline-flex gap-1 items-center">
-              <h2 className="text-xl md:text-2xl lg:text-4xl font-semibold">4000</h2>
+              <h2 className="text-xl md:text-2xl lg:text-4xl font-semibold">6000</h2>
               <h2 className="text-blue-light text-xl md:text-2xl lg:text-4xl font-extrabold">+</h2>
             </div>
             <h4 className="xs:text-sm font-Cormorant sm:text-lg xl:text-xl xs:text-center">Contribution</h4>
