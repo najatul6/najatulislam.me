@@ -25,7 +25,6 @@ const ExperienceEducation = () => {
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               transition={{
-                type: "spring",
                 stiffness: 260,
                 damping: 20,
                 delay: idx * 0.1,
@@ -50,7 +49,6 @@ const ExperienceEducation = () => {
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               transition={{
-                type: "spring",
                 stiffness: 260,
                 damping: 20,
                 delay: idx * 0.1,
