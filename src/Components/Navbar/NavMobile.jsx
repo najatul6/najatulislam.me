@@ -68,7 +68,7 @@ const NavMobile = () => {
         {isOpen && (
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            whileInView={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
             className="fixed left-0 shadow-4xl right-0 top-[5.5rem] min-h-screen bg-light-black px-5 py-6"
@@ -80,7 +80,7 @@ const NavMobile = () => {
                 return (
                   <motion.li
                     initial={{ scale: 0, opacity: 0 }}
-                    animate={{ scale: 1, opacity: 1 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
                     transition={{
                       type: "spring",
                       stiffness: 260,

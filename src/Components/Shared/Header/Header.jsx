@@ -4,7 +4,7 @@ const Header = ({ text1, text2 }) => {
   return (
     <motion.div
       initial={{ scale: 0, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
+      whileInView={{ scale: 1, opacity: 1 }}
       transition={{ duration: 0.2 }}
       className="flex flex-col justify-center items-center text-3xl md:text-4xl
       font-bold uppercase py-10"

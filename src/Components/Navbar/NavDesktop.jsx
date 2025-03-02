@@ -59,7 +59,7 @@ const NavDesktop = () => {
             <motion.li
               key={index}
               initial={{ scale: 0, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
+              whileInView={{ scale: 1, opacity: 1 }}
               transition={{
                 type: "spring",
                 stiffness: 260,

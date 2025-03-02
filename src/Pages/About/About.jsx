@@ -30,7 +30,7 @@ const About = () => {
         <div className="flex justify-center items-center shadow-up rounded-xl py-5 my-5">
           <motion.h2
             initial={{ scale: 0, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
+            whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.3 }}
             className="text-xl md:text-3xl font-bold uppercase font-Cormorant w-full text-center  rounded-xl"
           >

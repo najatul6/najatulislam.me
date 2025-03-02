@@ -6,7 +6,7 @@ const SubTitle = ({ text1, text2 }) => {
     <>
       <motion.h2
         initial={{ scale: 0, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
+        whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1 }}
         className="text-xl md:text-3xl font-semibold uppercase font-Cormorant py-2"
       >

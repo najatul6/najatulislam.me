@@ -11,7 +11,7 @@ const ExperienceEducation = () => {
         <div className="flex flex-col justify-center items-center py-3">
           <motion.h2
             initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             className="text-base md:text-lg font-semibold font-Cormorant py-2 rounded-tr-full rounded-bl-full  text-center shadow-up px-10 md:px-20"
           >
@@ -23,7 +23,7 @@ const ExperienceEducation = () => {
             <motion.div
               key={item?.id}
               initial={{ scale: 0, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
+              whileInView={{ scale: 1, opacity: 1 }}
               transition={{
                 type: "spring",
                 stiffness: 260,
@@ -48,7 +48,7 @@ const ExperienceEducation = () => {
             <motion.div
               key={item?.id}
               initial={{ scale: 0, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
+              whileInView={{ scale: 1, opacity: 1 }}
               transition={{
                 type: "spring",
                 stiffness: 260,
