@@ -1,8 +1,11 @@
+
+import { motion } from "framer-motion";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 import Header from "../../Components/Shared/Header/Header";
 import { projectItem } from "../../Utils/projectItem";
 import MyWorkCard from "../../Components/Project/MyWorkCard";
-import { motion } from "framer-motion";
-import Marquee from "react-fast-marquee";
 
 const MyWork = () => {
   return (
@@ -15,27 +18,32 @@ const MyWork = () => {
         <Header text1={"My"} text2={"Projects"} />
       </motion.div>
       <section className="shadow-in py-4 md:px-5 rounded-xl">
-        <Marquee pauseOnHover={true} pauseOnClick={true} speed={120}>
-          <div className="flex justify-center items-center gap-6">
-            {projectItem?.map((item, idx) => (
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 260,
-                  damping: 20,
-                  delay: idx * 0.1,
-                  duration: 0.2,
-                }}
-                key={item?.id}
-                className="w-[300px] md:w-[400px] lg:w-[500px]"
-              >
-                <MyWorkCard item={item} />
-              </motion.div>
-            ))}
-          </div>
-        </Marquee>
+        <Swiper
+          modules={[Autoplay]}
+          spaceBetween={20}
+          slidesPerView={1}
+          loop={true}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+            speed: 4500,
+          }}
+          speed={4500}
+          freeMode={true}
+          breakpoints={{
+            640: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
+          }}
+          className="mySwiper"
+        >
+          {projectItem?.map((item) => (
+            <SwiperSlide key={item?.id} className="flex justify-center">
+              <MyWorkCard item={item} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </section>
     </div>
   );
