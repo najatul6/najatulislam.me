@@ -20,11 +20,11 @@ const MyWork = () => {
       </motion.div>
       <section className="shadow-in py-4 md:px-5 rounded-xl relative">
         {/* Swiper Navigation Buttons */}
-        <button className="absolute top-1/2 left-0 z-10 bg-gray-800 text-white p-2 rounded-full transform -translate-y-1/2 hover:bg-gray-600 transition" id="prevSlide">
-          <FaArrowLeft />
+        <button className="absolute top-1/2 left-4 z-10 bg-gray-800 text-white p-2 rounded-full transform -translate-y-1/2 hover:bg-gray-600 hover:text-blue-light transition" id="prevSlide">
+          <FaArrowLeft size={20}/>
         </button>
-        <button className="absolute top-1/2 right-0 z-10 bg-gray-800 text-white p-2 rounded-full transform -translate-y-1/2 hover:bg-gray-600 transition" id="nextSlide">
-          <FaArrowRight />
+        <button className="absolute top-1/2 right-4 z-10 bg-gray-800 text-white p-2 rounded-full transform -translate-y-1/2 hover:bg-gray-600 hover:text-blue-light transition" id="nextSlide">
+          <FaArrowRight size={20}/>
         </button>
 
         <Swiper
