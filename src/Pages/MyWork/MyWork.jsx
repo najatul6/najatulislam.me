@@ -7,8 +7,52 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const MyWork = () => {
+  const [projects, setProjects] = useState([]);
+    const [sortBy, setSortBy] = useState('newest');
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+  useEffect(() => {
+      const fetchProjects = async () => {
+        try {
+          const response = await axios.get('https://portfolio-server-delta-three.vercel.app/projects');
+          setProjects(response.data);
+          setLoading(false);
+        } catch (err) {
+          setError(err.message);
+          setLoading(false);
+          console.error("Error fetching projects:", err);
+        }
+      };
+  
+      fetchProjects();
+    }, []);
+    const sortedProjects = [...projects]
+    .filter(project => project.viewMode === "Published")
+    .sort((a, b) => {
+      if (sortBy === 'newest') return new Date(b.lastUpdated) - new Date(a.lastUpdated);
+      if (sortBy === 'oldest') return new Date(a.lastUpdated) - new Date(b.lastUpdated);
+      return 0;
+    });
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-white text-xl">Loading projects...</div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-red-500 text-xl">Error: {error}</div>
+      </div>
+    );
+  }
   return (
     <div className="mb-8">
       <motion.div
@@ -50,8 +94,8 @@ const MyWork = () => {
           }}
           className="mySwiper"
         >
-          {projectItem?.map((item) => (
-            <SwiperSlide key={item?.id} className="flex justify-center">
+          {sortedProjects?.map((item) => (
+            <SwiperSlide key={item?._id} className="flex justify-center">
               <MyWorkCard item={item} />
             </SwiperSlide>
           ))}
