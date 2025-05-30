@@ -17,7 +17,7 @@ const MyWorkCard = ({ item }) => {
     imageRef.current.style.transform = "translateY(0)";
   };
   return (
-    <div className="shadow-in p-2 md:p-3 rounded-xl">
+    <div className="shadow-in p-2 md:p-3 rounded-xl w-full">
       <motion.div
         className=" relative overflow-hidden  shadow-in h-[300px]"
         onMouseOver={handleHover}
