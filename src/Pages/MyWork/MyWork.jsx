@@ -31,12 +31,7 @@ const MyWork = () => {
       fetchProjects();
     }, []);
     const sortedProjects = [...projects]
-    .filter(project => project.viewMode === "Published")
-    .sort((a, b) => {
-      if (sortBy === 'newest') return new Date(b.lastUpdated) - new Date(a.lastUpdated);
-      if (sortBy === 'oldest') return new Date(a.lastUpdated) - new Date(b.lastUpdated);
-      return 0;
-    });
+    .filter(project => project.viewMode === "Published");
 
   if (loading) {
     return (
